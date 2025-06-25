@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Quiz Configuration Container -->
+    <div class="configContainer">
+        <h2 class="configTitle">Quiz Configuration</h2>
+
+        <div class="configOption">
+            <h4 class="optionTitle">Select Category</h4>
+
+            <div class="categoryOptions">
+                <button class="categoryOption">Programming</button>
+                <button class="categoryOption">Geography</button>
+                <button class="categoryOption">Mathematics</button>
+                <button class="categoryOption">Entertainment</button>
+            </div>
+        </div>
+
+        <div class="configOption">
+            <h4 class="optionTitle">No. of Questions</h4>
+
+            <div class="questionsOptions">
+                <button class="questionOption">5</button>
+                <button class="questionOption">10</button>
+                <button class="questionOption">15</button>
+                <button class="questionOption">20</button>
+                <button class="questionOption">25</button>
+            </div>
+        </div>
+
+        <button class="startQuizBtn">Start Quiz</button>
+
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quizContainer">
+
+        <header class="quizHeader"> <!-- It contain text Quiz Application and text time duration -->
+            <h2 class="quizTitle">Quiz Application</h2>
+            <div class="quizTimer">
+                <span class="material-symbols-outlined">timer_play</span>
+                <p class="timeDuration">15s</p>
+            </div>
+        </header>
+
+        <div class="quizContent"> <!-- It contain quiz question and answer option -->
+            <h1 class="quizQuestion"></h1>
+            <ul class="answerOptions">
+
+                <!-- <li class="answerOption">
+                    <p>create function myFunction()</p>
+                </li>
+                <li class="answerOption correct">
+                    <p>function myFunction()</p>
+                    <span class="material-symbols-outlined">check_circle</span>
+                </li>
+                <li class="answerOption incorrect">
+                    <p>def function myFunction()</p>
+                    <span class="material-symbols-outlined">cancel</span>
+                </li>
+                <li class="answerOption">
+                    <p>func myFunction()</p>
+                </li> -->
+
+            </ul>
+        </div>
+
+        <div class="quizFooter">
+            <p class="questionStatus"></p>
+            <button class="nextQuestionBtn"> Next
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Result Container -->
+    <div class="resultContainer">
+        <img src="quiz-over.png" class="result-img" alt="congratulations-img">
+        <h2 class="resultTitle">Quiz Complete!</h2>
+        <p class="resultMessage">You answered <b>3</b> out of <b>10</b> questions correctly. Great effort!</p>
+        <button class="tryAgainBtn">Try Again</button>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
